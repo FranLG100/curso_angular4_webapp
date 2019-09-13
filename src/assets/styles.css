@@ -46,7 +46,13 @@
 	transition: all 300ms;
 }
 
+.activado{
+	text-decoration: none !important;
+	border-bottom: 3px solid white !important;
+}
+
 #nav ul li a:hover{
 	text-decoration: none;
 	background: #E03137;
 }
+

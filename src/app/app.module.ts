@@ -5,15 +5,22 @@ import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home.component';
+import { ErrorComponent } from './components/error.component';
+import { ProductosListComponent } from './components/productos-list.component';
+
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ErrorComponent,
+    ProductosListComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [
   	appRoutingProviders
