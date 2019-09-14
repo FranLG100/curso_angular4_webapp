@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home.component';
 import { ErrorComponent } from './components/error.component';
 import { ProductosListComponent } from './components/productos-list.component';
+import { ProductosAddComponent } from './components/productos-add.component';
+
+import { FormsModule } from '@angular/forms';
 
 import { HttpModule } from '@angular/http';
 
@@ -15,12 +18,14 @@ import { HttpModule } from '@angular/http';
     AppComponent,
     HomeComponent,
     ErrorComponent,
-    ProductosListComponent
+    ProductosListComponent,
+    ProductosAddComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    HttpModule
+    HttpModule, 
+    FormsModule
   ],
   providers: [
   	appRoutingProviders
